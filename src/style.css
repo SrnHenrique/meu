@@ -1,0 +1,95 @@
+/*ESTILO DOS PRODUTOS NA PÁGINA PRINCIPAL*/
+:root{
+    --white: #fff;
+    --dark1: #3434434e;
+    --dark2: #3a415a;
+    --dark3: #566981;
+    --dark4: #89a7b1;
+    --dark6: #2f2f46;
+    --dark4: #cbdad5;
+    --cyan1: #70e3ea;
+    --neutra0: #0e0c0c;
+    --neutra10: #a8a29e;
+}
+#container-produto{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+}
+#card-produto{
+    border: 3px solid var(--dark4);
+    border-radius: 5px;
+    margin: 10px;
+    width: 210px;
+}
+
+
+
+
+
+/*Sider Bar carriho*/
+header{
+    min-height: 70px;
+   background-color: var(--dark6);
+}
+.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: var(--dark6);
+    padding: 40px 0 40px 1%;
+    line-height: 40px;
+    box-shadow:  0 0 0 3px var(--dark3);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu-lateral.expandir{
+     width: 300px
+}
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu{
+    transition: .2s;
+}
+ul li.ativo{
+    background-color: #ff0077;
+
+}
+ul li.item-menu:hover{
+    background-color: #ff0077;
+
+}
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;    
+}
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+
+}
+.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+ul li.item-menu a .icon{
+    font-size: 30px;
+}
+.btn-expandir{
+    color: white;
+}
